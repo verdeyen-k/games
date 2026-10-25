@@ -1,6 +1,6 @@
 # Verdeyen Games
 
-The home page for our games: https://verdeyen-k.github.io/
+The home page for our games: https://verdeyen-k.github.io/games/
 
 Each game lives in its own repo and is published with GitHub Pages under the same address, so this page just links to them:
 
