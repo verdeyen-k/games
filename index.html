@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Verdeyen Games</title>
+<meta name="description" content="Games made by the Verdeyens. Play on one device or together online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg1: #1b1640; --bg2: #3a2a6b;
+    --ink: #fff7ec; --muted: #b9b0d8;
+    --card: rgba(255,255,255,0.08); --line: rgba(255,255,255,0.14);
+    --accent: #ffb84d;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { background: var(--bg1); }
+  body { margin: 0; min-height: 100vh; color: var(--ink);
+    font-family: 'Fredoka', ui-rounded, 'SF Pro Rounded', system-ui, sans-serif;
+    background: radial-gradient(120% 60% at 50% 0%, var(--bg2), var(--bg1)) no-repeat, var(--bg1); }
+  .wrap { max-width: 960px; margin: 0 auto;
+    padding: calc(36px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) calc(40px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+  header { text-align: center; margin-bottom: 28px; }
+  h1 { margin: 0; font-size: clamp(44px, 12vw, 72px); line-height: .95; letter-spacing: 1px; }
+  h1 small { display: block; font-size: .3em; color: var(--muted); letter-spacing: 3px; margin-top: 10px; font-weight: 500; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  a.game { display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: inherit;
+    background: var(--card); border: 2px solid var(--line); border-radius: 20px; padding: 18px;
+    transition: transform .12s, border-color .15s, background .15s; }
+  a.game:hover { transform: translateY(-3px); border-color: var(--c); background: rgba(255,255,255,.11); }
+  a.game:active { transform: scale(.97); }
+  a.game:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .icon { width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; font-size: 36px;
+    background: var(--c); box-shadow: inset 0 -5px 0 rgba(0,0,0,.2), inset 0 4px 0 rgba(255,255,255,.25); }
+  h2 { margin: 0; font-size: 26px; line-height: 1.05; }
+  p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.35; font-weight: 500; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 4px; }
+  .tags span { font-size: 13px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: rgba(255,255,255,.1); }
+  .play { align-self: flex-start; font-weight: 700; font-size: 18px; color: #2b1d00; background: var(--accent);
+    padding: 8px 18px; border-radius: 14px; box-shadow: 0 4px 0 #c17c18; }
+  footer { text-align: center; color: var(--muted); font-size: 14px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Verdeyen Games<small>PLAY ON ONE DEVICE OR TOGETHER ONLINE</small></h1>
+  </header>
+
+  <main class="grid">
+    <a class="game" href="/beesnest/" style="--c:#f2b51e">
+      <div class="icon">🐝</div>
+      <h2>Bees Nest</h2>
+      <p>Fill cells of the hive and set off chain reactions. Cells you set off are yours. Most points when the hive is full wins.</p>
+      <div class="tags"><span>1–4 players</span><span>Same device</span><span>Online</span></div>
+      <span class="play">Play</span>
+    </a>
+    <a class="game" href="/froggydraw/" style="--c:#4fbf5a">
+      <div class="icon">🐸</div>
+      <h2>Froggy Draw</h2>
+      <p>Copy the pixel-art picture on your own grid before time runs out. Pick your frog and race your friends.</p>
+      <div class="tags"><span>2–12 players</span><span>Online</span><span>Practice alone</span></div>
+      <span class="play">Play</span>
+    </a>
+    <a class="game" href="/stacktics/" style="--c:#ff6b6b">
+      <div class="icon">🧱</div>
+      <h2>Stacktics</h2>
+      <p>Take turns dropping blocks onto a wobbly tower. Blocks that fall earn stars for everyone else to spend on power-ups.</p>
+      <div class="tags"><span>2–4 players</span><span>Same device</span><span>Online</span></div>
+      <span class="play">Play</span>
+    </a>
+    <a class="game" href="/universal-dog-capture/" style="--c:#4dabf7">
+      <div class="icon">🐾</div>
+      <h2>Universal Dog Capture</h2>
+      <p>Dogs are running wild through the city! Click them to catch them, and buy traps and helpers to slow them down.</p>
+      <div class="tags"><span>Solo</span><span>Online</span><span>Tournaments up to 16</span></div>
+      <span class="play">Play</span>
+    </a>
+    <a class="game" href="/asyetunnamed/" style="--c:#b47cf0">
+      <div class="icon">❓</div>
+      <h2>As Yet Unnamed</h2>
+      <p>A two-player strategy game of rows, columns, and timing.</p>
+      <div class="tags"><span>2 players</span><span>Online</span></div>
+      <span class="play">Play</span>
+    </a>
+  </main>
+
+  <footer>Made by the Verdeyens</footer>
+</div>
+</body>
+</html>
