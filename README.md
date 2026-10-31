@@ -9,6 +9,7 @@ Each game lives in its own repo and is published with GitHub Pages under the sam
 - Type and Seek: `/typeandseek/`
 - Froggy Draw: `/froggydraw/`
 - Stacktics: `/stacktics/`
+- Tower Trample: `/towertrample/`
 - Universal Dog Capture: `/universal-dog-capture/`
 - As Yet Unnamed: `/asyetunnamed/`
 
